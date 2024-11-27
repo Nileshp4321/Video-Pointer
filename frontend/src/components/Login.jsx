@@ -12,7 +12,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://video-pointer-backend-6eo4spbon-nileshp4321s-projects.vercel.app/api/auth/login", {
+      const response = await fetch("https://video-pointer-backend.vercel.app/api/auth/login", {
         method: "post",
         headers: {
           "Content-Type": "application/json",
