@@ -2,7 +2,7 @@
   "name": "assignment",
   "version": "0.1.0",
   "private": true,
-  "proxy":"https://video-pointer-backend.vercel.app/",
+  "proxy":"https://video-pointer-backend.vercel.app",
   "dependencies": {
     "@headlessui/react": "^2.1.8",
     "@material-tailwind/html": "^2.2.4",
