@@ -16,7 +16,7 @@ const Signup = ({ onSignup }) => {
       return;
     }
     try {
-      const response = await fetch("https://video-pointer-backend-updated.vercel.app//api/auth/register", {
+      const response = await fetch("https://video-pointer-backend-updated.vercel.app/api/auth/register", {
         method: "post",
         headers: {
           "Content-Type": "application/json",
