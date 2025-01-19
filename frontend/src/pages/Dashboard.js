@@ -104,7 +104,7 @@ function Dashboard() {
       const token = localStorage.getItem("userToken");
       if (isEditing) {
         await axios.put(
-          `http://localhost:5000/api/annotations/${currentNoteId}`,
+          `https://video-pointer-backend-updated.vercel.app/api/annotations/${currentNoteId}`,
           { note },
           {
             headers: { Authorization: `Bearer ${token}` },
@@ -119,7 +119,7 @@ function Dashboard() {
         }));
       } else {
         await axios.post(
-          "http://localhost:5000/api/annotations",
+          "https://video-pointer-backend-updated.vercel.app/api/annotations",
           { videoId: videoData.videoId, timestamp: formattedTime, note },
           {
             headers: { Authorization: `Bearer ${token}` },
@@ -194,7 +194,7 @@ function Dashboard() {
   const handleDeleteAnnotation = async (noteId) => {
     const token = localStorage.getItem("userToken");
     try {
-      await axios.delete(`http://localhost:5000/api/annotations/${noteId}`, {
+      await axios.delete(`https://video-pointer-backend-updated.vercel.app/api/annotations/${noteId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setVideoData((prev) => ({
