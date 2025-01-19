@@ -50,7 +50,7 @@ function Dashboard() {
     try {
       const token = localStorage.getItem("userToken");
       const response = await axios.get(
-        `http://localhost:5000/api/annotations/`,
+        `https://video-pointer-backend-updated.vercel.app/api/annotations/`,
         {
           params: { videoId: videoData.videoId, userId: videoData.userId },
           headers: { Authorization: `Bearer ${token}` },
